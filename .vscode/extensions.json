@@ -1,5 +1,5 @@
 {
   "recommendations": ["zoellner.openapi-preview", "mermade.openapi-lint"]
-  // another up and comming linter
-  // that uses the lint rules in this repo: "stoplight.spectral"
+  // another up and comming linter, but not recommended because it has to be configured
+  // to be disabled globally in vscode to have good DX "stoplight.spectral"
 }

@@ -1,15 +1,12 @@
 {
-  // if you are using the extension "stoplight.spectral"
-  // uncomment this:
-  //
-  //   "spectral.enable": true,
-  //   "spectral.rulesetFile": ".spectral.yml",
-  //   "spectral.validateFiles": [
-  //     "**/*asyncapi.yml",
-  //     "**/*asyncapi.yaml",
-  //     "**/*asyncapi.json",
-  //     "**/*openapi.yml",
-  //     "**/*openapi.yaml",
-  //     "**/*openapi.json"
-  //   ]
+  "spectral.enable": true,
+  "spectral.rulesetFile": ".spectral.yml",
+  "spectral.validateFiles": [
+    "**/*asyncapi.yml",
+    "**/*asyncapi.yaml",
+    "**/*asyncapi.json",
+    "**/*openapi.yml",
+    "**/*openapi.yaml",
+    "**/*openapi.json"
+  ]
 }
