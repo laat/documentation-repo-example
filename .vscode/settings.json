@@ -1,4 +1,6 @@
 {
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
   "spectral.enable": true,
   "spectral.rulesetFile": ".spectral.yml",
   "spectral.validateFiles": [

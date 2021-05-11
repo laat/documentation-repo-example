@@ -11,3 +11,9 @@ lint:
 ```
 npm run lint
 ```
+
+format all files with prettier:
+
+```
+npm run format
+```
