@@ -5,12 +5,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "spectral lint \"public/**/*openapi.json\"",
     "start": "live-server public --open=/"
   },
   "keywords": [],
   "author": "Sigurd Fosseng",
   "license": "ISC",
   "devDependencies": {
+    "@stoplight/spectral": "^5.9.1",
     "live-server": "^1.2.1"
   }
 }

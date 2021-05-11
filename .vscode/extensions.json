@@ -1,0 +1,5 @@
+{
+  "recommendations": ["zoellner.openapi-preview", "mermade.openapi-lint"]
+  // another up and comming linter
+  // that uses the lint rules in this repo: "stoplight.spectral"
+}
