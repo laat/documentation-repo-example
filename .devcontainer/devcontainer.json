@@ -1,0 +1,42 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.194.0/containers/javascript-node
+{
+  "name": "Node.js",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": { "VARIANT": "16" }
+  },
+
+  "settings": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "spectral.enable": true,
+    "spectral.rulesetFile": ".spectral.yml",
+    "spectral.validateLanguages": ["json", "jsonc", "yaml"],
+    "spectral.validateFiles": [
+      "**/*asyncapi.yml",
+      "**/*asyncapi.yaml",
+      "**/*asyncapi.json",
+      "**/*openapi.yml",
+      "**/*openapi.yaml",
+      "**/*openapi.json"
+    ]
+  },
+
+  // Add the IDs of extensions you want installed when the container is created.
+  "extensions": [
+    "zoellner.openapi-preview",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "stoplight.spectral"
+  ],
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [8080],
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "npm ci",
+
+  // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+  "remoteUser": "node"
+}

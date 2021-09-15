@@ -3,6 +3,7 @@
   "editor.formatOnSave": true,
   "spectral.enable": true,
   "spectral.rulesetFile": ".spectral.yml",
+  "spectral.validateLanguages": ["json", "jsonc", "yaml"],
   "spectral.validateFiles": [
     "**/*asyncapi.yml",
     "**/*asyncapi.yaml",

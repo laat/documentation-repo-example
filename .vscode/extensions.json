@@ -1,9 +1,7 @@
 {
   "recommendations": [
     "zoellner.openapi-preview",
-    "mermade.openapi-lint",
+    "stoplight.spectral",
     "esbenp.prettier-vscode"
   ]
-  // another up and comming linter, but not recommended because it has to be configured
-  // to be disabled globally in vscode to have good DX "stoplight.spectral"
 }
