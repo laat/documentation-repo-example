@@ -17,7 +17,7 @@
   "author": "Sigurd Fosseng",
   "license": "ISC",
   "devDependencies": {
-    "@stoplight/spectral": "^5.9.2",
+    "@stoplight/spectral": "^6.1.0",
     "husky": "^7.0.2",
     "lint-staged": "^11.2.3",
     "live-server": "^1.2.1",
