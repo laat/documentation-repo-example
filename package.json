@@ -15,7 +15,7 @@
   },
   "keywords": [],
   "author": "Sigurd Fosseng",
-  "license": "ISC",
+  "license": "Unlicense",
   "devDependencies": {
     "@stoplight/spectral": "^6.1.0",
     "husky": "^7.0.4",
