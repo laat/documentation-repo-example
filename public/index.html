@@ -8,7 +8,23 @@
   </head>
   <body>
     <ul>
-      <li><a href="petstore">petstore</a></li>
+      <li><a href="?readme.md">Overview</a></li>
+      <li><a href="?http.md">Http example</a></li>
     </ul>
   </body>
+  <script>
+    window.coreDocs = { theme: false };
+  </script>
+  <script
+    src="https://static.nrk.no/core-docs/major/3/core-docs.min.js"
+    charset="utf-8"
+  ></script>
+  <script type="module">
+    import mermaid from 'https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs';
+    const theme =
+      document.documentElement.getAttribute('data-theme') === 'dark'
+        ? 'dark'
+        : 'default';
+    mermaid.initialize({ startOnLoad: true, theme });
+  </script>
 </html>
