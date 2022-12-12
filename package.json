@@ -6,10 +6,10 @@
   "main": "index.js",
   "scripts": {
     "lint": "run-s lint:*",
-    "lint:spec": "spectral lint \"public/**/*openapi.{json,yml,yaml}\"",
+    "lint:spec": "spectral lint \"docs/**/*openapi.{json,yml,yaml}\"",
     "lint:format": "npm run prettier -- --check",
     "format": "npm run prettier -- --write",
-    "start": "live-server public --open=/",
+    "start": "live-server docs --open=/",
     "prettier": "prettier \"**/*\" --ignore-unknown",
     "prepare": "husky install"
   },
