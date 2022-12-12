@@ -1,5 +1,7 @@
 # documentation
 
+[Demo](https://laat.github.io/documentation-repo-example/)
+
 for a live reload server run
 
 ```
