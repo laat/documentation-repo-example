@@ -4,32 +4,34 @@
   "name": "Node.js",
   "build": {
     "dockerfile": "Dockerfile",
-    "args": { "VARIANT": "16" }
+    "args": { "VARIANT": "18" },
   },
 
-  "settings": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "spectral.enable": true,
-    "spectral.rulesetFile": ".spectral.yml",
-    "spectral.validateLanguages": ["json", "jsonc", "yaml"],
-    "spectral.validateFiles": [
-      "**/*asyncapi.yml",
-      "**/*asyncapi.yaml",
-      "**/*asyncapi.json",
-      "**/*openapi.yml",
-      "**/*openapi.yaml",
-      "**/*openapi.json"
-    ]
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "spectral.enable": true,
+        "spectral.rulesetFile": ".spectral.yml",
+        "spectral.validateLanguages": ["json", "jsonc", "yaml"],
+        "spectral.validateFiles": [
+          "**/*asyncapi.yml",
+          "**/*asyncapi.yaml",
+          "**/*asyncapi.json",
+          "**/*openapi.yml",
+          "**/*openapi.yaml",
+          "**/*openapi.json",
+        ],
+      },
+      "extensions": [
+        "zoellner.openapi-preview",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "stoplight.spectral",
+      ],
+    },
   },
-
-  // Add the IDs of extensions you want installed when the container is created.
-  "extensions": [
-    "zoellner.openapi-preview",
-    "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
-    "stoplight.spectral"
-  ],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [8080],
@@ -38,5 +40,5 @@
   "postCreateCommand": "npm ci",
 
   // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-  "remoteUser": "node"
+  "remoteUser": "node",
 }
