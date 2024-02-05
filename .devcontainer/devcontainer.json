@@ -4,7 +4,7 @@
   "name": "Node.js",
   "build": {
     "dockerfile": "Dockerfile",
-    "args": { "VARIANT": "18" },
+    "args": { "VARIANT": "18" }
   },
 
   "customizations": {
@@ -21,16 +21,16 @@
           "**/*asyncapi.json",
           "**/*openapi.yml",
           "**/*openapi.yaml",
-          "**/*openapi.json",
-        ],
+          "**/*openapi.json"
+        ]
       },
       "extensions": [
         "zoellner.openapi-preview",
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
-        "stoplight.spectral",
-      ],
-    },
+        "stoplight.spectral"
+      ]
+    }
   },
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
@@ -40,5 +40,5 @@
   "postCreateCommand": "npm ci",
 
   // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-  "remoteUser": "node",
+  "remoteUser": "node"
 }
